@@ -1,0 +1,52 @@
+.nav-btn {
+  font-family: sofia-pro, sans-serif;
+  font-size: 12pt;
+  text-align: center;
+	position: fixed;
+	z-index: 2;
+	background-color: black;
+  color: grey;
+  opacity: 40%;
+  width: 110px;
+}
+
+.nav-btns a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.nav-btn {
+  border-radius: 180px;
+}
+
+.nav-btn:hover {
+  opacity: 80%;
+}
+
+.nav-back {
+  left: 10px;
+  top: 10px;
+}
+
+.nav-next {
+  right: 10px;
+  top: 10px;
+}
+
+.nav-home {
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 10px;
+}
+
+@media (max-width: 1000px) {
+
+  .nav-btn {
+    font-size: 0.9em;
+  }
+}

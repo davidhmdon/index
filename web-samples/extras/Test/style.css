@@ -1,0 +1,190 @@
+body {
+	font-family: Open Sans, Arial, sans-serif;
+	line-height: 1.3em;
+	background: url('background.jpg') repeat fixed;
+	background-size: 200px;
+	margin: 0px;
+    padding: 0;
+	
+}
+
+#page {
+	max-width: 1200px;
+	min-width: 720px;
+	margin: 0 auto 0 auto;
+	border-left: 2px dotted darkblue;
+	border-right: 2px dotted darkblue;
+	background-color: #C5EDD0;
+}
+
+header {
+	background-color: #99EE99;
+	width: 100%;
+	padding-top: 0px;
+	border-radius: 5px;
+}
+
+
+.heading {
+	text-align: center;
+	margin: 0;
+}
+
+h1, .logo {
+	display: inline-block;
+}
+
+.logo img {
+	max-width: 75px;
+	vertical-align: bottom;
+}
+
+h1 {
+	font-family: 'Goudy Bookletter 1911';
+	font-size: 48pt;
+	color: #0F4F0B;
+	text-align: center;
+	padding-top: 10px;
+	margin: 30px;
+}
+
+.toolbar ul {
+	list-style: none;
+	text-align: center;
+	margin: 10px, 0px, 5px;
+	padding: 10px;
+	background: #0F4F0B;
+	border-radius: 5px;
+}
+
+.toolbar li {
+	font-size: 18pt;
+	font-weight: bold;
+	display: inline-flex;
+	text-align: center;
+}
+
+.toolbar li a {
+	text-decoration: none;
+	color: #A8D1DF;
+	padding: 10px 25px;
+}
+
+.toolbar li a:hover {
+	color: lightgreen;
+}
+
+.sidebar {
+	min-width: 300px;
+	max-width: 300px;
+	display: inline-block;
+	padding: 5px 0px 25px 25px;
+	margin-top: 5px;
+	text-align: left;
+}
+
+#gardenpics {
+	padding: 5px;
+}
+
+#gardenpics img {
+	display: inline;
+	max-height: 105px;
+	border-style: thick;
+	margin: 0px auto 10px;
+	border: 1px ridge darkgreen;
+	border-radius: 5px;
+}
+
+input {
+	max-width: 225px;
+}
+
+input, .dropdown, button {
+	font-size: 110%;
+	border-radius: 5px;
+	padding: 2px;
+}
+
+h3 {
+	padding-top: 10px;
+}
+
+.dropdown {
+	width: 225px;
+	margin-bottom: 25px;
+}
+
+#subscribe p {
+	max-width: 225px
+}
+
+.content {
+	display: inline-block;
+	width: 65%;
+	margin-left: 30px;
+	padding-top: 20px;
+	vertical-align: top;
+}
+
+.navigate a:link {
+	font-weight: bold;
+	color: brown;
+	text-decoration: none;
+}
+
+.listing {
+	display: inline-block;
+	padding: 30px 5px 20px 0px;
+	white-space: nowrap;
+}
+
+.listing img {
+	max-height: 475px;
+	min-height: 300px;
+}
+
+.price {
+	display: inline-block;
+	margin: auto;
+	vertical-align: top;
+	line-height: 2em;
+	max-width: 40%;
+    padding-left: 20px;
+}
+
+.price h4 {
+	display: inline-block;
+	margin-bottom: 5px;
+	vertical-align: top;
+	font-size: 1.2em;
+}
+
+#cost {
+	font-size: 1.5em;
+	font-weight: bold;
+	color:  #0F4F0B;
+}
+
+#payment {
+	display: block;
+	margin: 10px, auto, 10px;
+	max-height: 75px;
+	min-height: 50px;
+    padding-top: 50px;
+}
+
+.description {
+	font-size: 1.2em;
+	line-height: normal;
+	max-width: 80%;
+	padding-bottom: 40px;
+}
+
+footer {
+	background-color: #99EE99;
+	width: 100%;
+	text-align: center;
+	padding: 25px 0;
+
+}

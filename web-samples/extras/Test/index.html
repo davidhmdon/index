@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Mosshead Nursery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+	<link href="style.css" type="text/css" rel="stylesheet" />
+	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+ </head>
+
+<body>
+	<div id="page">
+		<header>
+	        <div class="heading">
+	        	<span class="logo"><img src="logo.png"></span>
+			    <h1>Mosshead Nursery</h1>
+			    <span class="logo"><img src="logo.png"></span>
+			</div>
+			<div class="toolbar">
+				<ul>
+			        <li> <a href="bla bla">Home</a></li>
+				    <li><a href="bla bla">Plants</a></li>
+			        <li><a href="bla bla">Terms and Conditions</a></li>
+		   	        <li><a href="bla bla">Contact Us</a></li>
+		    	    <li><a href="bla bla">Who We Are</a></li>
+			        <li><a href="bla bla">Tips</a></li>
+				    <li><a href="bla bla">News</a></li></span>
+				</ul>
+			</div>
+		</header>
+		<div class="sidebar">
+			<div id="gardenpics">
+				<img src="gardenpic.jpg" />
+			</div>
+	        <div id= "search">
+			    <form action="https://www.mossheadnursery.co.uk/search.php" />
+				    <input type="search" name="search"
+				        placeholder="Search our plants..." />
+				    <input type="submit" value="Go" />
+		        </form>
+		        <h3>Filter Search:</h3>
+		        <form action="http://www.mossheadnursery.co.uk/refine.php" />
+		        <select name="latin" class="dropdown" />
+		            <option value="AZ">Latin Name, A-Z</option>
+		        	<option value="A">Latin Name, A</option>
+		        	<option value="B">Latin Name, B</option>
+		        	<option value="C">Latin Name, C</option>
+		        	<option value="D">Latin Name, D</option>
+		        	<option value="ETC">Latin Name, ETC.</option>
+		        </select>
+		        </form>
+
+		        <form action="http://www.mossheadnursery.co.uk/refine.php" />
+		        <select name="common" class="dropdown" />
+		            <option value="AZ">Common Name, A-Z</option>
+		        	<option value="A">Common Name, A</option>
+		        	<option value="B">Common Name, B</option>
+		        	<option value="C">Common Name, C</option>
+		        	<option value="D">Common Name, D</option>
+		        	<option value="ETC">Common Name, ETC.</option>
+		        </select>
+		        </form>
+
+		        <form action="http://www.mossheadnursery.co.uk/refine.php" />
+		        <select name="soil" class="dropdown" />
+		            <option value="soiltype">Soil Type</option>
+		        	<option value="dry">Dry Soil</option>
+		        	<option value="clay">Clay Soil</option>
+		        	<option value="boggy">Boggy Soil</option>
+		        	<option value="welldrained">Well-Drained</option>
+		        </select>
+		        </form>
+
+		        <form action="http://www.mossheadnursery.co.uk/refine.php" />
+		        <select name="colour" class="dropdown" />
+		            <option value="colour">Flower Colour</option>
+		        	<option value="blue">Blue</option>
+		        	<option value="brown">Brown</option>
+		        	<option value="green">Green</option>
+		        	<option value="purple">Purple</option>
+		        	<option value="silver">Silver</option>
+		        	<option value="yellow">Yellow</option>
+		        	<option value="white">White</option>
+		        </select>
+		        </form>
+
+		        <form action="http://www.mossheadnursery.co.uk/refine.php" />
+		        <select name="season" class="dropdown" />
+		            <option value="colour">Season</option>
+		        	<option value="autumn">Good for autumn</option>
+		        	<option value="spring">Good for spring</option>
+		        	<option value="summer">Good for summer</option>
+		        	<option value="all">Good for all seasons</option>
+		        </select>
+		        </form>
+
+		        <form action="http://www.mossheadnursery.co.uk/refine.php" />
+		        <select name="height" class="dropdown" />
+		            <option value="ultheight">Ultimate Height</option>
+		        	<option value="60cm">Up to 60cm</option>
+		        	<option value="90cm">60cm to 90cm</option>
+		        	<option value="1.2m">90cm to 1.2m</option>
+		        	<option value=">1.2m">Over 1.2m</option>
+		        </select>
+		        </form>
+		    </div>
+	    </div>
+	    <div class="content">
+	    	<div class="navigate">
+	    		<a href="changeme.com">Plants</a> / <a href="changeme.com">Sempervivum</a> / Green Sempervivum (set of 6)
+	    	</div>
+	    	<div class="listing">
+	    		<div class="fotorama">
+	    			<img src="sempervivum.jpg">
+ 					<img src="table.jpg">
+ 					<img src="plants.jpg">
+ 				</div>
+	    		<div class="price">
+	    			<h4>Green Sempervivum (set of 6)</h4>
+	    			<p>Six plants in a selection of green varieties.</p>
+	    			<p id="cost">£12.99</p>
+	    			<button type="button" id="basket">Add to Basket</button>
+	    			<a href="changeme.com"><img src="payment.png" id="payment" alt="Paypal, Mastercard, Visa, Maestro, American Express"></a>
+	    		</div>
+	    	</div>
+	    	<div class="description">
+	    		<p>A set of six sempervivum plants from our collection, patterned in various shades of green. You may find some tipped with red or deep purple in the summer, but they are predominantly green.</p>
+
+                <p>These perseverant plants - sometimes called houseleeks - are named for how they carry their leaves through winter and resist the effects of harsh environments. <i>Semper</i> (always) <i>vivum</i> (living) are aptly titled - strong plants whose leaves grow into pretty rosettes.</p>
+
+				<p>They will grow almost anywhere and with the minimum of attention. All our plants are named varieties and we send them still growing in their pots.</p>
+	    	</div>
+	    </div>
+	    <footer>
+	    	© Copyright Mosshead Nursery 2021. All Rights Reserved.
+	    </footer>
+	</div>
+</body>
+<link rel="stylesheet" href="css/jquery.otg-carousel.css" />
+<script src="js/carousel.js"></script>
+</html>

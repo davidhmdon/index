@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'Gangster Grotesk Bold';
+    src: url('gangstergrotesk-bold.otf') format('OpenType'),
+         url('gangstergrotesk-bold-webfont.woff2') format('woff2'),
+         url('gangstergrotesk-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: 'Gangster Grotesk Bold';
+  font-size: 16pt;
+}
+
+#yt-wrap {
+  position: fixed;
+  left: 0;
+  z-index: -99;
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+
+#yt-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 75%;
+  min-height: 75%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 28pt;
+  padding-left: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 10px 20px;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: #fff;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+li a {
+  color: #fff;
+}
+
+li:hover,
+li:focus-within {
+  background: lightpink;
+  cursor: pointer;
+}
+
+li:focus-within a {
+  outline: none;
+  width: 100%;
+}
+
+ul li ul {
+  font-size: 0.5em;
+  background: pink;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  width: 100%;
+}
+
+ul li ul li {
+  clear: both;
+  width: 90%;
+  text-decoration: none;
+}
+
+footer {
+  position: absolute; 
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  margin: 0px 50px 50px 0;
+
+}
+
+@keyframes turn {
+  0% {
+   transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+#sun {
+  margin: 10px 20px;
+  opacity: 50%;
+  animation: turn 15s linear infinite;
+  transition-duration: 1.5s;
+}
+
+#sun:hover {
+  opacity: 100%;
+}
+
+.logo:hover + .about {
+    opacity: 1.0;
+}
+
+.about {
+  max-width: 400px;
+  align-self: center;
+  background: lightpink;
+  padding: 10px 20px;
+  border-radius: 5px;
+  opacity: 0.0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+@media (max-width: 800px) {
+
+  ul {
+    display: flex;
+    flex-direction: column
+  } 
+
+  li {
+    font-size: 90%;
+  }
+
+  .dropdown li {
+    display: none;
+  }
+
+  img {
+    width: 200px;
+    height: 150px;
+  }
+
+  #sun img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+

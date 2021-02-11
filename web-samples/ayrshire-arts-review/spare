@@ -1,0 +1,17 @@
+//put in .sub
+<a href="changeme.com" id="subscribe"><br><br>subscribe</a>
+
+.sub {
+	grid-column: 3;
+	grid-row: 1 / 3;
+	font-size: 1.1em;
+	color: white;
+	background-color: darkred;
+	padding: 10px 10px 15px;
+	display: flex;
+	align-items: baseline;
+}
+
+.sub a {
+	color: white;
+}

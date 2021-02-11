@@ -1,0 +1,49 @@
+<div class="see-work">
+			<div class="category copy">
+				WORDS
+			</div>
+			<div class="samples">
+			</div>
+			<div class="category coding">
+				WEBSITES
+			</div>
+			<div class="samples">
+			</div>
+		</div>
+
+
+.see-work {
+	grid-row: 6 / 7;
+	display: grid;
+	grid-template-columns: 1fr 6fr 1fr 6fr;
+	border-bottom: 3px solid black;
+	border-top: 3px solid black;
+}
+
+.category {
+	display: flex;
+	justify-content: center;
+	writing-mode: vertical-rl;
+	transform: rotate(-180deg);
+	font-size: 1.5em;
+	padding: 0 20px;
+	border: 3px solid black;
+	border-bottom: none;
+	border-top: none;
+}
+
+.copy {
+	background-color: #C9A3A4;
+}
+
+.coding {
+	background-color: #A3C9C8;
+}
+
+.samples {
+	background-color: #F5F5F5;
+}
+
+
+
+/////////////////*/////////////////////

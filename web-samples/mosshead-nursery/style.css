@@ -1,0 +1,327 @@
+body {
+	font-family: Open Sans, Arial, sans-serif;
+	line-height: 1.3em;
+	background-color: #e6f5f7;
+	margin: 0px;
+    padding: 0;
+}
+
+.wrapper.mosshead {
+	max-width: 1200px;
+	min-width: 720px;
+	height: 100%;
+	margin: 0 auto;
+	border-left: 2px dotted darkgreen;
+	border-right: 2px dotted darkgreen;
+	background-color: #E5E4C3;
+}
+
+header, footer {
+	background-color: #CEE0B2;
+	width: 100%;
+}
+
+header {
+	padding-top: 0px;
+	border-radius: 5px;
+}
+
+.heading {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	text-align: center;
+	margin: 0;
+	padding: 1em;
+}
+
+.contact {
+	list-style: none;
+	font-size: 0.9em;
+	text-align: end;
+}
+
+h1, .logo {
+	display: inline-block;
+}
+
+.logo img {
+	max-width: 75px;
+	vertical-align: bottom;
+}
+
+h1 {
+	font-family: 'Goudy Bookletter 1911';
+	font-size: 48pt;
+	color: #0F4F0B;
+	text-align: center;
+	padding-top: 10px;
+	margin: 30px 10px;
+}
+
+
+ul {
+	padding-inline-start: 0;
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+
+.toolbar ul {
+	list-style: none;
+	text-align: center;
+	margin: 0 0 1em;
+	padding: 10px;
+	background: #0F4F0B;
+	border-radius: 5px;
+}
+
+.toolbar li {
+	font-size: 18pt;
+	font-weight: bold;
+	display: inline-flex;
+	text-align: center;
+}
+
+.mosshead .toolbar li a {
+	text-decoration: none;
+	color: #CEE0B2;
+	padding: 10px 25px;
+}
+
+.toolbar li a:hover {
+	color: white;
+}
+
+.sidebar {
+	min-width: 300px;
+	max-width: 300px;
+	display: inline-block;
+	padding: 5px 0px 25px 25px;
+	margin-top: 5px;
+	text-align: left;
+}
+
+
+#gardenpics {
+	padding: 5px;
+}
+
+#gardenpics img {
+	display: inline;
+	max-height: 105px;
+	border-style: thick;
+	margin: 0px auto 10px;
+	border: 1px ridge #0F4F0B;
+	border-radius: 5px;
+}
+
+input {
+	max-width: 225px;
+}
+
+input, .dropdown, button {
+	font-size: 110%;
+	border-radius: 5px;
+	padding: 2px;
+}
+
+.dropdown {
+	width: 225px;
+	margin-bottom: 25px;
+}
+
+.recentposts ul {
+	width: 275px;
+	margin-bottom: 25px;
+}
+
+.recentposts li {
+	font-size: 1.2em;
+	list-style: none;
+	padding: 15px 5px;
+}
+
+.recentposts a {
+	text-decoration: none;
+}
+
+.container {
+  padding: 5px 0;
+  background-color: inherit;
+}
+
+input[type=text], input[type=submit] {
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #0F4F0B;
+  color: white;
+  border: none;
+  width: 100%;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+.content {
+	display: inline-block;
+	width: 65%;
+	margin-left: 30px;
+	padding-top: 5px;
+	vertical-align: top;
+}
+
+.content a:link, .sidebar a:link {
+	font-weight: bold;
+	color: brown;
+	text-decoration: none;
+}
+
+.listing {
+	display: inline-block;
+	padding: 10px 5px 20px 0px;
+	margin-bottom: 20px;
+}
+
+.flexslider {
+	margin: 20px 0 0 20px;
+	display: inline-block;
+	max-height: 350px;
+	max-width: 350px;
+	border: 4px solid #E7F4F4;
+}
+
+.price {
+	display: inline-block;
+	margin: auto;
+	vertical-align: top;
+	line-height: 2em;
+	max-width: 40%;
+    padding-left: 20px;
+}
+
+.price h4 {
+	display: inline-block;
+	margin-top: 40px;
+	margin-bottom: 5px;
+	vertical-align: top;
+	font-size: 1.2em;
+}
+
+#cost {
+	font-size: 1.5em;
+	font-weight: bold;
+	color:  #0F4F0B;
+}
+
+#payment {
+	display: block;
+	margin: 10px 0 10px;
+	max-height: 75px;
+	min-height: 50px;
+	margin-left: 55px;
+    padding-top: 20px
+}
+
+.description {
+	font-size: 1.2em;
+	line-height: normal;
+	width: 670px;
+	padding-bottom: 15px;
+	text-align: justify;
+	word-wrap: break-word;
+}
+
+.extra {
+	border-top: 1px solid black;
+	padding-top: 10px;
+	width: 670px;
+}
+
+.extra ul {
+	list-style: none;
+	margin: 0 auto 0;
+}
+
+.extra li {
+	text-align: center;
+	display: inline-block;
+	padding: 0 10px 50px;
+}
+
+.otheritems a {
+	text-decoration: none;
+	color: black;
+}
+
+.otheritems img {
+	max-height: 175px;
+	max-width: 175px;
+}
+
+footer {
+	text-align: center;
+	padding: 25px 0;
+}
+
+@media (max-width: 1200px) {
+
+ .toolbar li a {
+ 	font-size: 14pt;
+  }
+
+  header h1 {
+    font-size: 32pt;
+  }
+
+  .toolbar li {
+  	font-size: 12pt;
+  }
+
+  .logo, .contact, .sidebar {
+  	display: none;
+  }
+
+  .content {
+  	width: 100%;
+  }
+
+  .content, .description, .extra {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	margin: 0 auto;
+  }
+
+  .flexslider {
+  	max-width: 350px;
+  }
+
+  .price {
+  	max-width: 150px;
+  	padding: 0;
+  	margin: 0;
+  	display: inline-flex;
+  	flex-direction: column;
+  	align-items: center;
+  }
+
+  br {
+  	display: none;
+  }
+
+   .description {
+  	max-width: 700px;
+  }
+
+
+}

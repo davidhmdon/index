@@ -1,0 +1,550 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	padding-inline-start: 0;
+}
+
+.flex {
+	display: flex;
+}
+
+.grid {
+	display: grid;
+}
+
+/*K2 Coffee*/
+
+.k2 {
+	font-family: basic-sans, sans-serif;
+	font-size: 16pt;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0;
+	color: white;
+	background-color: #4B4D57;
+	height: 100%;
+}
+
+.bottle-pic-left {
+	flex: 1 1 0px;
+	justify-content: center;
+	padding-top: 30px;
+}
+
+.bottle-pic-left img {
+	display: block;
+	top: 0;
+}
+
+.k2-ad-copy {
+	flex: 1 1 0px;
+	padding: 7.5% 7.5% 0 10px;
+	max-width: 50vw;
+}
+
+.k2-ad-copy > * {
+	padding-bottom: 40px;
+}
+
+.k2 h1 {
+	font-weight: 700;
+	font-size: 54pt;
+}
+
+.k2 h2 {
+	font-size: 24pt;
+}
+
+.buy-connect-k2 {
+	max-width: 100%;
+	font-weight: 700;
+}
+
+.buy-connect-k2 h4 {
+	margin-bottom: 5px;
+}
+
+.k2-shop {
+	margin-right: 50px;
+}
+
+.k2-sm img {
+	margin-right: 15px;
+}
+
+/*Cancel Covid*/
+
+.cancel {
+	font-family: filson-pro, sans-serif;
+	font-style: normal;
+	font-size: 14pt;
+	color: #116666;
+	text-align: center;
+	background-size: 100vh;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px 10% 0;
+}
+
+.cancel > * {
+	margin-bottom: 30px;
+}
+
+.cancel h1 {
+	font-size: 64pt;
+}
+
+.cancel h2 {
+	font-size: 34pt;
+	color: #663C11;
+}
+
+.cancel h3 {
+	font-size: 20pt;
+	margin-bottom: 10px;
+}
+
+.cancel p {
+	width: 80%;
+}
+
+.cancel-body {
+	flex-direction: column;
+}
+
+.cancel-tiles {
+	flex-grow: 1;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.tile {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #116666;
+	border-radius: 10px;
+	width: 30%;
+	padding: 20px;
+}
+
+.tile img {
+	max-width: 50%;
+}
+
+.wear {
+	margin: 0 25px;
+}
+
+.cancel-undertiles {
+	justify-content: space-around;
+}
+
+.cancel-undertiles > * {
+	background-color: white;
+	color: inherit;
+}
+
+.cancel-undertiles img {
+	max-width: 90%;
+	padding: 0;
+
+}
+
+.distance-text {
+	flex-direction: column;
+	justify-content: center;
+}
+
+.cancel-bottom {
+	flex-direction: column;
+	align-items: center;
+	margin-top: 5px;
+	color: black;
+}
+
+.cancel-bottom > * {
+	padding: 20px 0;
+}
+
+.cancel-bottom, .cancel-resource-btn {
+	border-radius: 10px;
+}
+
+.cancel-resource-btn {
+	border: 3px solid black;
+	font-size: 32pt;
+	padding: 20px;
+	color: black;
+	background-color: #E8F7F1;
+}
+
+.cancel-sources {
+	margin-top: 100px;
+	padding: 20px;
+	align-self: flex-start;
+	text-align: start;
+	font-size: 0.8em;
+}
+
+.cancel-sources a {
+	text-decoration: none;
+	margin-bottom: 50px;
+	font-style: italic;
+}
+
+.cancel-sources a:link {
+	color: black;
+}
+
+.cancel footer {
+	margin-top: 20px;
+}
+
+.cancel footer a {
+	text-decoration: none;
+	justify-self: flex-end;
+}
+
+/*eatable*/
+
+.eatable {
+	background-color: #FEF7E4;
+
+}
+
+img.bg {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+/*offwhite_hex*/
+
+.oh {
+	font-family: proxima-nova, sans-serif;
+	font-size: 18pt;
+	padding-left: 100px;
+	background-color: #D3D3D3;
+}
+
+.oh header {
+	padding-top: 30px;
+}
+
+.oh h1 {
+	font-size: 42pt;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.oh h2 {
+	font-size: 22pt;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.oh-row {
+	flex-wrap: wrap;
+}
+
+.sliding-ad-alt {
+	display: none;
+}
+
+.item {
+	padding: 20px 70px;
+}
+
+.item h2 {
+	background-color: #313131;
+	color: white;
+	text-align: center;
+	padding: 5px;
+}
+
+.chocolat-image img {
+	height: 500px;
+	width: auto;
+}
+
+/*RHA DACAMP*/
+
+.dac {
+	font-family: nimbus-sans;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22pt;
+}
+
+.dac h1 {
+	font-family: proxima-nova;
+	font-size: 52pt;
+	font-weight: bold;
+}
+
+.dac h2 {
+	font-size: 32pt;
+	font-weight: bold;
+}
+
+.dac h3 {
+	font-size: 26pt;
+	text-decoration: underline;
+}
+
+.dac h4 {
+	color: grey;
+}
+
+.dac header {
+	flex-direction: column;
+	align-items: center;
+	padding: 50px 0;
+	border-bottom: 2px solid black;
+	background-color: #AFCCE0;
+}
+
+.dac p, .dac h4 {
+	margin-bottom: 30px;
+}
+
+.dac-body {
+	padding-top: 6%;
+	padding-bottom: 6%;
+}
+
+
+.box-center {
+    width: 50%; 
+    padding: 0 8%;
+    margin: 0 auto;
+ }
+
+ .box-center p {
+ 	text-align: justify;
+ 	line-height: 1.4em;
+ }
+
+/*Big Day*/
+
+.big-day {
+	font-size: 19pt;
+	font-family: calluna, Times, serif;
+}
+
+.big-day h1 {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.big-day i {
+	font-size: 1.1em;
+	font-style: italic;
+}
+
+.bd-left-box {
+	width: 70vw;
+}
+
+.bd-right-box {
+	width: 30vw;
+}
+
+.bd-left-box img {
+	max-width: 100%;
+	height: auto;
+}
+
+.bd-blog {
+	padding: 40px 70px;
+}
+
+.bd-blog > * {
+	margin-bottom: 30px;
+}
+
+.bd-p1 {
+	margin-top: 30px;
+} 
+
+/*Endless Arcade*/
+
+.arcade {
+	margin: 100px auto;
+	width: 65%;
+	font-family: minion-pro, Times, serif;
+	font-size: 18pt;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.arcade h1 {
+	font-size: 1.5em;
+}
+
+.arcade h2 {
+	font-size: 1.3em;
+}
+
+.arcade h1, .arcade h2, .pl-content > * {
+	margin-bottom: 40px;
+}
+
+.arcade i {
+	font-style: italic;
+}
+
+address {
+	width: 30%;
+	flex-direction: column;
+}
+
+.arcade header {
+	margin: 20px 50px;
+	flex-direction: column;
+	align-items: center;
+}
+
+.pl-content {
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.pl-content ol {
+	align-self: center;
+}
+
+
+.tracklist {
+	align-self: flex-start;
+	margin-left: 50px;
+}
+
+/*MEDIA QUERIES*/
+
+/*K2 Coffee*/
+
+@media (max-width: 1000px) {
+	.wrapper.k2 {
+		flex-direction: column-reverse;
+	}
+}
+
+/*Cancel Covid*/
+
+@media (max-width: 1000px) {
+	.cancel h1 {
+		font-size: 46pt;
+	}
+
+	.tile-row {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.tile-row > * {
+		width: 80vw;
+		margin-bottom: 20px;
+	}
+}
+
+/*offwhite_hex*/
+
+@media (max-width: 1000px) {
+
+	.oh-row {
+		flex-direction: column;
+	}
+
+	.oh-sliding-ad {
+		display: none;
+	}
+
+	.sliding-ad-alt {
+		display: inline;
+	}
+
+	.oh img {
+		width: 70vw;
+		height: auto;
+	}
+
+	.oh div {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+/*RHA DACAMP*/
+
+@media (max-width: 900px) {
+
+	.box-center {
+		font-size: 0.9em;
+		width: 70%;
+	}
+
+}
+
+/*Big Day Blog*/
+
+@media (max-width: 1000px) {
+
+	.big-day {
+		flex-direction: column;
+	}
+
+	.bd-left-box {
+		width: 100%;
+	}
+		
+	.bd-right-box {
+		width: 80%;
+	}
+
+	.vanish-pic {
+		display: none;
+	}
+}
+
+/*Endless Arcade*/
+
+@media (max-width: 800px) {
+
+	.arcade {
+		font-size: 16pt;
+	}
+
+	.arcade header {
+		margin: 0.9rem;
+	}
+
+	.arcade address {
+		width: 60%;
+	}
+
+}
