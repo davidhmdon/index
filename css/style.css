@@ -835,7 +835,7 @@ footer {
 
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
 
 	/*HOME*/
 
@@ -916,7 +916,7 @@ footer {
 	}
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
 
 	body {
 		width: 100vw;
