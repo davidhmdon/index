@@ -916,7 +916,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
 
 	body {
 		width: 100vw;
@@ -978,5 +978,17 @@ footer {
 
 	.contact-home input, .contact-home textarea {
 		width: 300px;
+	}
+}
+
+@media screen {
+	body {
+		display: flex;
+		flex-direction: column;
+		font-size: 1.3em;
+	}
+
+	#sticky-notes {
+		display: none;
 	}
 }
