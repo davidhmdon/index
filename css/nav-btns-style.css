@@ -1,6 +1,6 @@
 .nav-btn {
   font-family: sofia-pro, sans-serif;
-  font-size: 12pt;
+  font-size: 14pt;
   text-align: center;
 	position: fixed;
 	z-index: 2;
@@ -46,7 +46,4 @@
 
 @media (max-width: 1000px) {
 
-  .nav-btn {
-    font-size: 0.7em;
-  }
 }
