@@ -45,6 +45,7 @@ a, a:link, a:visited {
 
 .home {
 	grid-template-rows: 20vh 58px 8fr 1fr 1fr 11fr 3fr;
+	flex-direction: column;
 }
 
 .blog {
@@ -143,6 +144,7 @@ h1::selection {
 /*...*/
 
 .profile {
+	width: 100%;
 	padding: 10px;
 	align-items: center;
 }
@@ -166,15 +168,16 @@ h1::selection {
 	margin-bottom: 10px;
 	background-color: #F7E9E9;
 	height: 100%;
+	width: 100%;
 }
 
 .display-grid-left {
-	grid-template-columns: 15px repeat(10, calc(30% - 40px)) 15px;
+	grid-template-columns: 15px repeat(10, calc(30vw - 40px)) 15px;
 	overflow-x: scroll;
 }
 
 .display-grid-right {
-	grid-template-columns: 15px repeat(6, calc(30% - 40px)) 15px;
+	grid-template-columns: 15px repeat(6, calc(30vw - 40px)) 15px;
 	overflow-x: scroll;
 }
 
@@ -297,7 +300,7 @@ h5, .column h6 {
 	font-size: 1.2em;
 }
 
-h5 {
+.column h5 {
 	padding-top: 5px;
 }
 
@@ -316,9 +319,11 @@ h5 {
 
 .sample-list.alt {
 	height: 80%;
-	border: 1px solid black;
+	border: 2px solid black;
+	border-radius: 5px;
+	background-color: #F5F5F5;
 	padding: 30px;
-	margin: 10px;
+	margin: 10px 10px 30px 10px;
 	flex-direction: column;
 	align-items: flex-start;
 	overflow-y: scroll;
@@ -333,7 +338,7 @@ h5 {
 }
 
 .alt h5 {
-	font-weight: bold
+	font-weight: bold;
 }
 
 /*HOME - TICKER*/
@@ -349,6 +354,7 @@ h5 {
 				0% { transform: translate3d(0, 0, 0); }
 				100% { transform: translate3d(-100%, 0, 0); }
 			}
+
 			.tcontainer{
 				width: 100%;
 				overflow: hidden;
@@ -727,46 +733,36 @@ footer {
 
 /*MEDIA QUERIES*/
 
-@media (max-width: 1300px) {
 
-	.home {
-		grid-template-rows: 20vh 58px 6fr 1fr 1fr 11fr 3fr;
-	}
-
-	#stickycopy {
-		left: 720px;
-	}
-
-	#stickyedit {
-		left: 790px;
-	}
-
-	#stickyhtml {
-		left: 950px;
-	}
-
-	#stickyjs {
-		left: 1000px;
-	}
-}
-
-@media (max-width: 1040px) {
-
-
+@media (max-width: 1200px) {
+	
 	#sticky-notes {
 		display: none;
 	}
 
-	.open-left.alt {
+	.sample-list.alt {
 		display: flex;
-		justify-content: flex-end;
-		flex-grow: 1;
+		max-height: 500px;
 	}
 
-	.open-right.alt {
+	.not-home .nav-next, .not-home .nav-back {
+		display: none;
+	}
+
+
+	.navbar.alt {
 		display: flex;
-		justify-content: flex-start;
-		flex-grow: 1;
+		flex-direction: column;
+	}
+
+	.main {
+		display: none;
+	}
+
+	.flex-center {
+		padding: 0;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.top-item ul {
@@ -774,17 +770,13 @@ footer {
 	}
 
 	.top-items li, .top-items a, .top-items .darkbg, 
-	 .not-home li, .not-home a, .not-home .darkbg {
+	.not-home li, .not-home a, .not-home .darkbg {
 		display: flex;
 		flex-grow: 1;
 		flex-shrink: 1;
 		justify-content: center;
 		align-items: center;
 		padding: 0 auto;
-	}
-
-	.not-home .nav-next, .not-home .nav-back {
-		display: none;
 	}
 
 	.nav-next.end {
@@ -797,27 +789,16 @@ footer {
 		width: 100%;
 	}
 
-	.main {
-		display: none;
-	}
-
-	.navbar.alt {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.flex-center {
-		padding: 0;
-		justify-content: center;
-		align-items: center;
-	}
-
 	header h1 {
 		font-size: 42pt;
 	}
 
+	.profile {
+		display: flex;
+	}
+
 	#about-short {
-		margin: auto 0;
+		margin: 30px auto;
 		padding: 20px;
 	}
 
@@ -843,10 +824,6 @@ footer {
 		grid-row: 5 / 6;
 	}
 
-	.profile {
-		grid-template-columns: 1fr 1fr;
-	}
-
 	#about-short, .connect-us {
 		display: flex;
 		flex-direction: column;
@@ -870,7 +847,6 @@ footer {
 @media (max-width: 950px) {
 
 	.sample-list.alt {
-		display: flex;
 		max-height: 300px;
 	}
 }
@@ -882,7 +858,16 @@ footer {
 		flex-direction: column;
 	}
 
+
+	.sideways {
+		display: none;
+	}
+
 	/*HOME*/
+
+	header h1 {
+		margin: 25px auto;
+	}
 
 	.top-items {
 		flex-wrap: wrap;
@@ -905,8 +890,6 @@ footer {
 	#sticky-notes {
 		display: none;
 	}
-
-
 
 	.invitation {
 		width: 90%;
@@ -937,6 +920,7 @@ footer {
 
 	.about-blocks.flex, .contact-blocks.flex {
 		flex-direction: column;
+		align-items: center;
 	}
 
 	.about-blocks > * {
@@ -984,21 +968,11 @@ footer {
 
 	.profile {
 		flex-direction: column;
+		align-items: center;
 	}
 
 	.profile > * {
 		margin: 20px 0;
 	}
 
-}
-
-
-
-
-
-/*
-* {
-  background: #000 !important;
-  color: #0f0 !important;
-  outline: solid #f00 1px !important;
-}*/
+} 
