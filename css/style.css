@@ -363,9 +363,8 @@ h1::selection {
 #download-container {
 	grid-column: 1 / 2;
 	grid-row: 1 / 2;
-	width: 560px;
-	margin-left: 200px;
 	flex-direction: column;
+	align-items: center;
 	justify-content: flex-start;
 }
 
@@ -455,9 +454,6 @@ h1::selection {
 	background-color: #F7DADA;
 }
 
-.send-message.home {
-	margin-right: 25%;
-}
 
 .send-message.home {
 	max-width: 70%;
@@ -504,14 +500,12 @@ footer {
 	list-style: none;
 	justify-content: space-between;
 	align-items: flex-end;
-	padding-right: 20px;
 }
 
 .main-footer li {
 	font-size: 0.7em;
 	font-weight: bold;
 	opacity: 80%;
-	padding: 15px 15px 5px 15px;
 }
 
 ::-webkit-scrollbar {
@@ -622,9 +616,12 @@ footer {
 	grid-row: 3 / 4;
 }
 
-.contact.body {
+.contact.body, .contact-blocks {
 	justify-content: center;
-	margin-right: 120px;
+}
+
+.contact-blocks {
+	padding: 20px;
 }
 
 #contact-heading {
@@ -707,22 +704,8 @@ footer {
 
 /*MEDIA QUERIES*/
 
-/*@media (max-width: 1550px) {
-	#open-left, #open-right {
-		font-size: 0.8em;
-	}
-}*/
-
 @media (max-width: 1040px) {
 
-
-	/*html, body {
-	    width: 100%;
-	    height: 100%;
-	    margin: 0;
-	    padding: 0;
-	    overflow-x: hidden; 
-	}*/
 
 	#sticky-notes {
 		display: none;
@@ -774,7 +757,7 @@ footer {
 
 	.navbar.alt {
 		display: flex;
-		flex-direction: column
+		flex-direction: column;
 	}
 
 	.flex-center {
@@ -784,12 +767,13 @@ footer {
 	}
 
 	header h1 {
+		grid-column: 1 / 4;
 		font-size: 42pt;
 	}
 
 	#about-short {
-		width: 100%;
 		margin: auto 0;
+		padding: 20px;
 	}
 
 	.ending-full {
@@ -824,14 +808,11 @@ footer {
 		align-items: center;
 	}
 
-	#download-container, .contact-box {
-		margin-left: 20%;
-	}
-
 	.invitation {
 		margin: 30px 0 0 0;
 		padding-left: 0;
 	}
+
 
 }
 
@@ -839,7 +820,22 @@ footer {
 
 	/*HOME*/
 
-	
+	.navbar.top-row {
+		flex-wrap: wrap;
+	}
+
+	.invitation {
+		width: 90%;
+	}
+
+	#download-links {
+		max-width: 100%;
+	}
+
+	.contact.alt {
+		display: flex;
+		flex-direction: column;
+	}
 
 	/*ABOUT and CONTACT*/
 
@@ -898,97 +894,16 @@ footer {
 
 @media (max-width: 600px) {
 
-	form.send-message {
-		max-width: 300px
-	}
 
-	header h1 {
-		font-size: 36pt;
-	}
-
-	.nav-next, .nav-back {
-		display: none;
-		width: 0;
-	}
-
-	.sideways {
-		display: none;
-	}
 }
 
-@media (max-width: 500px) {
 
-	body {
-		width: 100vw;
-	}
 
-	.home {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
 
-	header h1 {
-		font-size: 30pt;
-	}
 
-	.open-left, .open-right, {
-		font-size: 14pt;
-		padding-top: 12.5px;
-		padding-bottom: 12.5px;
-	}
 
-	.navbar li {
-		font-size: 0.7em;
-	}
-
-	.column {
-		height: 85%;
-		margin: 10px 0;
-	}
-
-	.column h3, .column h5, .column h6, .column p {
-		font-size: 0.9em;
-	}
-
-	.column .long {
-		font-size: 0.8em;
-	}
-
-	.column img {
-		width: 100px;
-		height: 50px;
-	}
-
-	#about-short {
-		padding: 35px;
-	}
-
-	.connect-us {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding: 35px;
-	}
-
-	.connect-us > * {
-		max-width: 500px;
-	}
-
-	.contact-home input, .contact-home textarea {
-		width: 300px;
-	}
-}
-
-@media screen {
-	body {
-		display: flex;
-		flex-direction: column;
-		font-size: 1.3em;
-	}
-
-	#sticky-notes {
-		display: none;
-	}
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
 }
