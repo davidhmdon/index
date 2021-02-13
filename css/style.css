@@ -65,7 +65,6 @@ header, h1, h2, h3, h4 {
 }
 
 header h1 {
-
 	font-size: 52pt;
 	font-weight: bold;
 	padding-bottom: 20px;
@@ -143,12 +142,11 @@ h1::selection {
 
 /*...*/
 
-
 .profile {
-	grid-row: 3 / 4;
-	grid-template-columns: 1fr 1fr;
-	padding: 0px 0;
+	padding: 10px;
+	align-items: center;
 }
+
 
 .profile p {
 	max-width: 500px;
@@ -224,6 +222,7 @@ h1::selection {
 }
 
 #stickycopy {
+	top: 200px;
 	left: 870px;
 }
 
@@ -233,12 +232,13 @@ h1::selection {
 }
 
 #stickyhtml {
+	top: 200px;
 	left: 1100px;
 }
 
 #stickyjs {
 	top: 425px;
-	left: 1150px;
+	left: 1190px;
 }
 
 /*HOME - INSIDE SLIDER*/
@@ -850,15 +850,29 @@ footer {
 	#about-short, .connect-us {
 		display: flex;
 		flex-direction: column;
+	}
+
+	#about-short {
+		align-items: flex-start;
+	}
+
+	.connect-us {
 		align-items: center;
 	}
 
 	.invitation {
-		margin: 30px 0 0 0;
+		margin: 0 auto;
+		max-width: 70%;
 		padding-left: 0;
 	}
+}
 
+@media (max-width: 950px) {
 
+	.sample-list.alt {
+		display: flex;
+		max-height: 300px;
+	}
 }
 
 @media screen and (max-width: 800px) {
@@ -892,9 +906,7 @@ footer {
 		display: none;
 	}
 
-	.sample-list.alt {
-		display: flex;
-	}
+
 
 	.invitation {
 		width: 90%;
