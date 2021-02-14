@@ -452,11 +452,21 @@ address {
 	.wrapper.k2 {
 		flex-direction: column-reverse;
 	}
+
+	.k2-ad-copy {
+		max-width: 70%;
+	}
 }
 
 /*Cancel Covid*/
 
 @media (max-width: 1000px) {
+	
+	.cancel {
+		font-size: 16pt;
+		padding: 5%;
+	}
+
 	.cancel h1 {
 		font-size: 46pt;
 	}
@@ -472,9 +482,23 @@ address {
 	}
 }
 
+/*eatable*/
+
+@media (max-width: 1000px) {
+	.eatable .bg {
+		margin-top: 60px;
+	}
+
 /*offwhite_hex*/
 
 @media (max-width: 1000px) {
+
+	.oh.wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 15px;
+	}
 
 	.oh-row {
 		flex-direction: column;

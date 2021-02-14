@@ -395,7 +395,7 @@ h5, .column h6 {
 				padding: 10px 5rem 0 0;
 }
 
-.sample-list.alt, #download-links, .contact-box .send-message {
+.sample-list.alt, #download-links, .contact-box .send-message, .contact.alt {
 	border-radius: 10px;
 }
 
@@ -723,7 +723,8 @@ footer {
 }
 
 .post-container {
-	width: 100%;
+	width: 90%;
+	padding-right: 100px;
 }
 
 .post-container ul {
@@ -924,10 +925,25 @@ footer {
 		max-width: 100%;
 	}
 
+	.connect-us > * {
+		padding: 30px;
+	}
+
 	.contact.alt {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
+		background-color: #F0F0F7;
+		border: 2px solid black;
+	}
+
+	.sample-list.alt, .contact.alt, #download-container {
+		max-width: 70%;
+	}
+
+	.mail-me {
+		text-decoration: underline;
+		color: #002F6B;
 	}
 
 	/*ABOUT and CONTACT*/
