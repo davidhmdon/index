@@ -737,11 +737,21 @@ footer {
 		display: none;
 	}
 
+	.hiddencopy, .hiddenweb {
+		display: none;
+	}
+
 	.sample-list.alt {
 		display: flex;
 		width: 70%;
 		max-height: 500px;
 		margin: auto 20px;
+	}
+
+	#about-short {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.not-home .nav-next, .not-home .nav-back {
@@ -789,7 +799,7 @@ footer {
 	}
 
 	header h1 {
-		font-size: 52pt;
+		font-size: 48pt;
 	}
 
 	.profile {
@@ -905,6 +915,7 @@ footer {
 	.contact.alt {
 		display: flex;
 		flex-direction: column;
+		text-align: center;
 	}
 
 	/*ABOUT and CONTACT*/
@@ -981,6 +992,10 @@ footer {
 
 	.profile > * {
 		margin: 20px 0;
+	}
+
+	.sample-list.alt {
+		margin-bottom: 40px;
 	}
 
 } 
