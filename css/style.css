@@ -593,10 +593,6 @@ footer {
 	justify-content: flex-end;
 }
 
-.body > * {
-	margin-top: 50px;
-}
-
 .about.body {
 	margin: 0 225px 40px 10%;
 	justify-content: flex-start;
@@ -689,7 +685,7 @@ footer {
 	justify-content: center;
 }
 
-.body > * {
+.blog.body > * {
 	margin-top: 50px;
 }
 
@@ -743,8 +739,9 @@ footer {
 
 	.sample-list.alt {
 		display: flex;
+		width: 70%;
 		max-height: 500px;
-		margin: auto 0;
+		margin: auto 20px;
 	}
 
 	.not-home .nav-next, .not-home .nav-back {
@@ -792,7 +789,7 @@ footer {
 	}
 
 	header h1 {
-		font-size: 42pt;
+		font-size: 52pt;
 	}
 
 	.profile {
@@ -933,6 +930,11 @@ footer {
 		margin: 10px;
 		padding: 10px;
 		text-align: justify;
+	}
+
+	.contact-details {
+		margin: 20px auto;
+		text-align: center;
 	}
 
 	.contact-page {
