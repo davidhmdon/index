@@ -464,12 +464,11 @@ address {
 	
 	.cancel {
 		font-size: 16pt;
-		padding: 8%;
-		text-align: justify;
+		padding: 5%;
 	}
 
 	.cancel h1 {
-		font-size: 46pt;
+		font-size: 42pt;
 	}
 
 	.tile-row {
@@ -548,7 +547,7 @@ address {
 	}
 		
 	.bd-right-box {
-		width: 65%;
+		width: 80%;
 	}
 
 	.vanish-pic {

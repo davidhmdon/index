@@ -339,7 +339,8 @@ h5, .column h6 {
 	}
 
 .sample-list.alt a:hover {
-	font-weight: bold;
+	color: #002F6B;
+	font-size: 1.1em;
 }
 
 .sample-list ul {
@@ -532,6 +533,18 @@ textarea {
 .send-me-btn {
 	height: 50px;
 }
+
+.contact.alt {
+	flex-direction: column;
+	text-align: center;
+	background-color: #F0F0F7;
+	border: 2px solid black;
+}
+
+.mail-me {
+		text-decoration: underline;
+		color: #002F6B;
+	}
 
 footer {
 	grid-row: 7 / 8;
@@ -931,19 +944,10 @@ footer {
 
 	.contact.alt {
 		display: flex;
-		flex-direction: column;
-		text-align: center;
-		background-color: #F0F0F7;
-		border: 2px solid black;
 	}
 
 	.sample-list.alt, .contact.alt, #download-container {
 		max-width: 70%;
-	}
-
-	.mail-me {
-		text-decoration: underline;
-		color: #002F6B;
 	}
 
 	/*ABOUT and CONTACT*/
