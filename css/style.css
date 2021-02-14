@@ -323,7 +323,6 @@ h5, .column h6 {
 .sample-list.alt {
 	height: 80%;
 	border: 2px solid black;
-	border-radius: 5px;
 	background-color: #F5F5F5;
 	padding: 30px;
 	margin: 10px 10px 30px 10px;
@@ -396,6 +395,11 @@ h5, .column h6 {
 				padding: 10px 5rem 0 0;
 }
 
+.sample-list.alt, #download-links, .contact-box .send-message {
+	border-radius: 10px;
+}
+
+
 .connect-us {
 	grid-row: 6 / 7;
 	display: grid;
@@ -412,15 +416,12 @@ h5, .column h6 {
 	justify-content: flex-start;
 }
 
-#download-container > * {
-	padding: 20px;
-}
-
 .connect-us h3 {
-	padding: 20px;
+	padding: 0 0 20px 0;
 }
 
 #download-links {
+	padding: 20px;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	background-color: #EBEDF7;
@@ -469,9 +470,8 @@ h5, .column h6 {
 .invitation {
 	grid-column: 1 / 2;
 	grid-row: 2 / 3;
-	margin-left: 200px;
-	width: 50%;
-	padding: 20px;
+	margin: 10px auto;
+	width: 45%;
 	align-items: center;
 }
 
@@ -521,7 +521,7 @@ textarea {
 }
 
 .contact-msg {
-	height: 150px;
+	height: 250px;
 	margin-bottom: 30px;
 }
 
