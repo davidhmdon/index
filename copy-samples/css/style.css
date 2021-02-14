@@ -464,7 +464,8 @@ address {
 	
 	.cancel {
 		font-size: 16pt;
-		padding: 5%;
+		padding: 8%;
+		text-align: justify;
 	}
 
 	.cancel h1 {
