@@ -154,7 +154,7 @@ h1::selection {
 .profile p {
 	max-width: 500px;
 	padding-top: 15px;
-	text-justify: inter-word; 
+	text-justify: inter-word;
 }
 
 .profile p::selection {
@@ -172,12 +172,12 @@ h1::selection {
 }
 
 .display-grid-left {
-	grid-template-columns: 15px repeat(10, calc(30vw - 40px)) 15px;
+	grid-template-columns: 15px repeat(9, calc(30vw - 40px)) 15px;
 	overflow-x: scroll;
 }
 
 .display-grid-right {
-	grid-template-columns: 15px repeat(6, calc(30vw - 40px)) 15px;
+	grid-template-columns: 15px repeat(5, calc(30vw - 40px)) 15px;
 	overflow-x: scroll;
 }
 
@@ -264,6 +264,8 @@ h1::selection {
 
 .promise {
 	font-size: 0.7em;
+	width: 50%;
+	margin-left: auto;
 }
 
 .column:hover {
@@ -313,6 +315,7 @@ h5, .column h6 {
 	align-self: flex-end;
 	justify-self: flex-end;
 	font-size: 1.1em;
+	padding-bottom: 10px;
 }
 
 /*HOME - ALT SAMPLE LISTS*/
@@ -327,14 +330,26 @@ h5, .column h6 {
 	flex-direction: column;
 	align-items: flex-start;
 	overflow-y: scroll;
+	width: 70%;
+	max-height: 500px;
+	margin: auto 20px;
+	}
+
+.sample-list.alt a {
+	text-decoration: underline;
+	}
+
+.sample-list.alt a:hover {
+	font-weight: bold;
 }
 
 .sample-list ul {
 	list-style: none;
+	text-align: center;
 }
 
 .sample-list li {
-	padding-bottom: 10px;
+	padding-bottom: 25px;
 }
 
 .alt h5 {
@@ -593,8 +608,8 @@ footer {
 	justify-content: flex-end;
 }
 
-.about.body {
-	margin: 0 225px 40px 10%;
+.about.body, .contact.body {
+	margin: 40px 225px 40px 10%;
 	justify-content: flex-start;
 }
 
@@ -646,7 +661,7 @@ footer {
 }
 
 .contact-blocks {
-	padding: 20px;
+	padding: 20px 20px 20px 0;
 }
 
 #contact-heading {
@@ -689,12 +704,16 @@ footer {
 	margin-top: 50px;
 }
 
+/*#blog-heading {
+	width: 20%;
+}*/
+
 .blog-container {
 	justify-self: center;
 	flex-direction: column;
 	align-items: center;
 	font-size: 1.3em;
-	width: 100%;
+	width: 65%;
 }
 
 .blog-container h4 {
@@ -704,8 +723,7 @@ footer {
 }
 
 .post-container {
-	width: 70%;
-	margin: 0 auto;
+	width: 100%;
 }
 
 .post-container ul {
@@ -743,9 +761,6 @@ footer {
 
 	.sample-list.alt {
 		display: flex;
-		width: 70%;
-		max-height: 500px;
-		margin: auto 20px;
 	}
 
 	#about-short {
@@ -816,17 +831,17 @@ footer {
 	}
 
 	.ending-short {
-	display: inline;
+		display: inline;
 	}
 
 	.display-grid-left {
 		grid-row: 3 / 4;
-		grid-template-columns: 15px repeat(10, calc(60% - 40px)) 15px;
+		grid-template-columns: 15px repeat(9, calc(60% - 40px)) 15px;
 		overflow-x: scroll;
 	}
 
 	.display-grid-right {
-		grid-template-columns: 15px repeat(6, calc(60% - 40px)) 15px;
+		grid-template-columns: 15px repeat(5, calc(60% - 40px)) 15px;
 		overflow-x: scroll;
 	}
 
@@ -837,13 +852,6 @@ footer {
 	#about-short, .connect-us {
 		display: flex;
 		flex-direction: column;
-	}
-
-	#about-short {
-		align-items: flex-start;
-	}
-
-	.connect-us {
 		align-items: center;
 	}
 
@@ -870,6 +878,10 @@ footer {
 
 	.sideways {
 		display: none;
+	}
+
+	.body {
+		margin: 30px auto;
 	}
 
 	/*HOME*/
