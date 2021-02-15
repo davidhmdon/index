@@ -307,7 +307,37 @@ footer a {
 
 
 @media (max-width: 800px) {
-  .headerright {
-    font-size: 0.8em;
-  }
+
+	.header.wrapper, .mainstory, .list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	 .headerright {
+	    font-size: 0.8em;
+	}
+
+	.content {
+		width: 100%;
+		padding: 20px auto;
+	}
+
+	.mainstory {
+		margin-right: 0;
+	}
+
+	.seemore {
+		height: 85px;
+	}
+
+	footer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.social {
+		margin: 30px auto;
+	}
+
+
 }
