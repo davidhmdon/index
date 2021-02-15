@@ -476,7 +476,7 @@ address {
 
 	.cancel p {
 		text-align: justify;
-		padding: 10px;
+		padding: 10px 0;
 	}
 
 	.cancel h1 {
@@ -485,7 +485,7 @@ address {
 	}
 
 	.cancel img {
-		width: 80px;
+		width: 200px;
 		height: auto;
 	}
 
