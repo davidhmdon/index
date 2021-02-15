@@ -56,8 +56,13 @@ body {
 	justify-content: center;
 }
 
+.logo {
+	display: flex;
+}
+
 .logo img {
 	max-height: 55px;
+	width: auto;
 	padding-right: 5px;
 }
 
@@ -351,16 +356,6 @@ h2 {
 	padding: 0 20px 20px 20px;
 }
 
-/*@media (max-width: 1040px) {
-
-	.wrapper {
-		grid-template-columns: 1fr 1fr;
-	}
-
-	.intro {
-		grid-column: 1 / 3;
-	}*/
-
 @media (max-width: 1300px) {
 
 	#oranges, #apponscreen img {
@@ -380,7 +375,7 @@ h2 {
 		}
 
 	.e-box {
-		margin: auto 20px;		
+		margin: 20px;		
 		height: 60vh;
 		display: flex;
 		flex-direction: column;
@@ -389,8 +384,8 @@ h2 {
 	}
 
 	.ani {
-		height: 90%;
-		width: 90%;
+		height: auto;
+		max-width: 90%;
 	}
 
 	#call-us {
