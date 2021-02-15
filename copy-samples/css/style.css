@@ -475,8 +475,8 @@ address {
 	}
 
 	.cancel p {
-		text-align: justify;
 		padding: 10px 0;
+		text-align: left;
 	}
 
 	.cancel h1 {
