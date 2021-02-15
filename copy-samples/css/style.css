@@ -471,8 +471,11 @@ address {
 	.cancel {
 		font-size: 16pt;
 		padding: 5%;
+	}
+
+	.cancel p {
 		text-align: justify;
-		text-justify: inter-character;
+		padding: 10px;
 	}
 
 	.cancel h1 {
