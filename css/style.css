@@ -791,7 +791,6 @@ footer {
 		display: none;
 	}
 
-
 	.navbar.alt {
 		display: flex;
 		flex-direction: column;
@@ -971,32 +970,28 @@ footer {
 	.about-blocks.flex, .contact-blocks.flex {
 		flex-direction: column;
 		align-items: center;
+		width: 100%;
 	}
 
 	.about-blocks > * {
 		margin: 10px;
 		padding: 10px;
 		text-align: justify;
+		width: 70%;
 	}
 
 	.contact-details {
+		width: 70%;
 		margin: 20px auto;
 		text-align: center;
 	}
 
+	.mail-me.shrink-word {
+		font-size: 0.9em;
+	}
+
 	.contact-page {
-		margin: 0;
-		width: 100%;
-	}
-
-	.send-message.page {
-		min-width: 0;
-		width: 80%;
-		margin: 20px auto;
-	}
-
-	.send-message.page textarea, .send-message.page input {
-		min-width: 0;
+		display: none;
 	}
 
 	/*BLOG*/
@@ -1006,6 +1001,7 @@ footer {
 	}
 
 	.body.blog {
+		justify-content: flex-start;
 		font-size: 16pt;
 	}
 
@@ -1013,8 +1009,17 @@ footer {
 		font-size: 16pt;
 	}
 
+	.blog.body > * {
+		margin-top: 0;
+	}
+
+	.blog-container {
+		width: 100%;
+	}
+
 	.post-container {
 		padding: 20px;
+		width: 70%;
 	}
 
 }
