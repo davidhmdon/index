@@ -474,7 +474,8 @@ address {
 	}
 
 	.cancel h1 {
-		font-size: 42pt;
+		font-size: 36pt;
+		padding: 10px;
 	}
 
 	.tile-row {
@@ -535,7 +536,7 @@ address {
 
 	.box-center {
 		font-size: 0.9em;
-		width: 70%;
+		width: 80%;
 	}
 
 }
