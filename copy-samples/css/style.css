@@ -85,7 +85,13 @@ time, mark, audio, video {
 	margin-right: 50px;
 }
 
+.k2-sm-pics {
+	display: flex;
+}
+
 .k2-sm img {
+	max-height: 50px;
+	width: auto;
 	margin-right: 15px;
 }
 
